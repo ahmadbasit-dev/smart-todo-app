@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Ahmad Basit Ahmadi">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="component.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-do App</h1>
+
+      <div class="counter__container">
+        <p class="task__count"></p>
+        <div class="layer">
+          <p class="progress__message">Keep it Up !</p>
+          <div class="prograss"><div class="progaras_bar"></div></div>
+        </div>
+      </div>
+
+      <form action="">
+        <input
+          type="text"
+          id="task__input"
+          placeholder="add new task ..."
+          autocomplete="off"
+        />
+        <button type="submit" class="btn add__btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </form>
+
+      <div class="filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+
+      <ul class="to-do__list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+.container h1 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  color: var(--accent-primary);
+  text-shadow: 0 0 10px var(--accent-primary);
+}
+
+#task__input {
+  flex: 1;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 100px;
+  padding: 10px 17px;
+  padding-right: 34px;
+  color: white;
+}
+
+#task__input:focus {
+  border: 2px solid var(--accent-primary);
+  outline: none;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.add__btn {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  height: 100%;
+  background: transparent;
+  color: var(--accent-primary);
+  font-weight: 600;
+  font-size: 2rem;
+  width: 30px;
+}
+.to-do__item {
+  border-radius: 100px;
+  background-color: var(--bg-surface);
+  padding: 10px 17px;
+}
+
+.btn__delete,
+.btn__edit {
+  font-size: 1.5rem;
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.btn__edit:hover {
+  color: var(--accent-primary);
+}
+.btn__delete:hover {
+  color: rgba(244, 0, 0, 0.8);
+}
+
+.span {
+  font-size: 1rem;
+}
+
+.checkbox {
+  height: 2rem;
+  appearance: none;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  position: relative;
+}
+.checkbox:checked {
+  transform: scale(1.1);
+}
+.checkbox:checked::before {
+  content: "\2713";
+  font-size: 1.5rem;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
+.span {
+  font-size: 1.7rem;
+}
+
+.checkbox:checked ~ .span {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: 0.3s;
+}
+
+.completed .span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filters button {
+  padding: 3px 5px;
+  background: var(--bg-surface);
+  border-radius: 20px;
+  font-size: 1rem;
+  color: var(--accent-primary);
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.filters button.active {
+  background: var(--accent-primary);
+  color: var(--bg-surface);
+}
+
+.counter__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+  border: 1px solid var(--accent-primary);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+
+.prograss {
+  height: 10px;
+  width: 100%;
+  border-radius: 15px;
+  background: var(--bg-surface);
+}
+.progaras_bar {
+  height: 100%;
+  border-radius: 15px;
+  background: var(--accent-primary);
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.task__count {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.7;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 356px) {
+  .container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .to-do__item {
+    padding: 5px 10px;
+  }
+}

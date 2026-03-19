@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  border-radius: 50px;
+  background: transparent;
+  padding: 2rem 4rem;
+  border: 1px solid var(--accent-primary);
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.to-do__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-top: 1.1rem;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+/* Scroll Bar desighn  */
+
+.to-do__list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.to-do__list::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+  border-radius: 10px;
+}
+
+.to-do__list::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 10px;
+}
+
+.to-do__list::-webkit-scrollbar-thumb:hover {
+  background: #ff3c78;
+}
+
+.to-do__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.task__text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 521px) {
+  html {
+    font-size: 56%;
+  }
+
+  .container {
+    max-width: 85%;
+    max-height: 80%;
+  }
+}
+
+@media (max-width: 381px) {
+  html {
+    font-size: 50%;
+  }
+
+  #task__input {
+    max-width: 100%;
+  }
+
+  .container {
+    max-height: 90%;
+  }
+
+  .to-do__list {
+    gap: 5px;
+    margin-top: 0;
+  }
+}
