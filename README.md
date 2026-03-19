@@ -6,7 +6,7 @@ A modern and interactive Todo App built with **Vanilla JavaScript**.
 
 ## 🔥 Live Demo
 
-👉 https://your-link.netlify.app
+👉 https://smart-todo-basit-dev.netlify.app
 
 ---
 
