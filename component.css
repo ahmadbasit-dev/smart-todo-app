@@ -116,6 +116,7 @@
   font-weight: 800;
   cursor: pointer;
   margin-top: 1rem;
+  outline: var(--bg-surface);
 }
 
 .filters button.active {
@@ -147,7 +148,7 @@
   height: 10px;
   width: 100%;
   border-radius: 15px;
-  background: var(--bg-surface);
+  background: rgb(24, 42, 66);
 }
 .progaras_bar {
   height: 100%;
@@ -161,7 +162,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: var(--bg-surface);
+  background: rgb(24, 42, 66);
   text-align: center;
   display: flex;
   justify-content: center;
